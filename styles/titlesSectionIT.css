@@ -1,0 +1,77 @@
+/* Основний стиль для title */
+
+
+.title {
+    padding: 5px;
+    padding-left: 20px;
+    border-radius: 50px; /* Закруглення країв */
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Легка тінь */
+    margin-bottom: 20px; /* Відступ знизу */
+    display: flex;
+    justify-content: space-between;
+    align-items: center; /* Вирівнювання по вертикалі */
+    width: 100%;
+}
+
+.title h2 {
+    font-size: 24px; /* Розмір шрифту */
+    font-weight: 700; /* Жирність шрифту */
+    color: #ffffff; /* Колір тексту */
+    margin: 0;
+    line-height: 30px;
+    padding: 16px 0;
+    border-bottom: 3px solid transparent;
+    margin-bottom: -1px;
+    width: fit-content;
+    font-style: normal;
+    transition: border-color 0.4s ease;
+}
+
+
+
+.title .search-box {
+    position: relative;
+    width: 300px;
+}
+
+.title .search-box input {
+    width: 100%;
+    padding: 10px 15px;
+    border: 1px solid #ddd;
+    border-radius: 20px;
+    outline: none;
+    font-size: 16px;
+    color: #333;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    transition: border-color 0.3s ease;
+}
+
+.title .search-box input:focus {
+    border-color: #008ECC;
+}
+
+.title .search-box button {
+    position: absolute;
+    right: 10px;
+    top: 50%;
+    transform: translateY(-50%);
+    background: #008ECC;
+    border: none;
+    color: #fff;
+    padding: 5px 10px;
+    border-radius: 50px;
+    cursor: pointer;
+    transition: background 0.3s ease;
+}
+
+.title .search-box button:hover {
+    background: #005f99;
+}
+.kidboring {
+    position: relative;
+}
+
+.kidboring:hover .tooltip {
+    opacity: 1;
+    visibility: visible;
+}

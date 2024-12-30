@@ -1,0 +1,300 @@
+.intro {
+    padding-top: 40px;
+    display: flex;
+    justify-content: center;
+}
+
+.mix{
+    padding-bottom: 20px;
+}
+
+.introCont {
+    width: 90%;
+    max-width: 1200px;
+    height: auto;
+    margin: auto;
+    overflow: hidden;
+    border: 5px solid #ffffff;
+    border-top-left-radius: 50px;
+    border-top-right-radius: 50px;
+    padding: 20px;
+    padding-bottom: 38px;
+    background-color: #7253fce7;
+}
+
+.introContent {
+    width: 90%;
+    max-width: 1200px;
+    height: auto;
+    margin: auto;
+    overflow: hidden;
+    border: 5px solid #ffffff;
+    border-radius: 50px;
+    padding: 20px;
+    padding-bottom: 38px;
+    background-color: #3c2797e7;
+}
+
+/* Вміст розділу */
+.content {
+    display: flex;
+    gap: 20px;
+}
+
+/* Секція тексту */
+.text-section {
+    flex: 2;
+}
+
+.intro-text p {    
+    font-size: 20px;
+    font-family: 'Open Sans', sans-serif;
+    font-weight: 400;
+    margin-bottom: 10px;
+    padding-left: 40px;
+    color: #fff;
+}
+
+/* Секція відео */
+.video-section {
+    padding-top: 20px;
+    flex: 1;
+    display: flex;
+    justify-content: center; /* Розташування по горизонталі */
+    gap: 10px; /* Проміжок між відео */
+}
+
+.video-section iframe {
+    border-radius: 10px;
+}
+
+.growing img, .growing video {
+    width: 100%;
+    height: auto;
+}
+
+
+
+.growing img {
+    padding: 20px;
+    border-radius: 15px; /* Заокруглення кутів */
+    max-width: 80%; /* Зменшення розміру для адаптації */
+    max-height: 80%; /* Зменшення висоти для адаптації */
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2); /* Тінь для краси */
+}
+
+.video-section {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    justify-content: center;
+    padding: 20px 0;
+    background-color: transparent;
+    border-radius: 8px;
+}
+
+.video-frame {
+    width: 400px;
+    height: 250px;
+    border: 2px solid #ddd;
+    border-radius: 8px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.video-frame:hover {
+    transform: scale(1.05);
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2);
+}
+
+
+.intro-text p {
+    
+    font-family: "Atma", system-ui;
+    font-weight: 600;
+    font-style: normal;
+}
+
+.atma-regular {
+    font-family: "Atma", system-ui;
+    font-weight: 400;
+    font-style: normal;
+  }
+
+
+
+
+/* Для телефонів (до 576px) */
+@media (max-width: 605px) {
+    .intro {
+        margin: auto;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .introContent,
+    .introCont {
+        width: 95%; /* Повна ширина екрана */
+        padding: 15px; /* Мінімальні відступи */
+        border-radius: 15px;
+    }
+
+    .content {
+        flex-direction: column;
+        gap: 10px;
+    }
+
+    .text-section {
+        flex: 1;
+    }
+
+    .intro-text p {
+        font-size: 14px; /* Менший текст для телефонів */
+        padding-left: 10px; /* Менший відступ */
+        text-align: center;
+    }
+
+    .video-frame {
+        width: 100%; /* Відео на всю ширину */
+        aspect-ratio: 4 / 3; /* Пропорції 4:3 */
+    }
+
+    .growing img {
+        max-width: 100%;
+        max-height: auto;
+    }
+}
+
+/* Для планшетів (від 577px до 768px) */
+@media (min-width: 605px) and (max-width: 811px) {
+    .intro {
+        padding-top: 20px;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .introContent,
+    .introCont {
+        width: 95%; /* Трохи менше повної ширини */
+        padding: 15px;
+        border-radius: 20px;
+        
+    justify-content: center;
+    }
+
+    .content {
+        flex-direction: column;
+        gap: 15px;
+    }
+
+    .text-section {
+        flex: 1;
+    }
+
+    .intro-text p {
+        font-size: 16px; /* Текст трохи більший, ніж для телефонів */
+        padding-left: 15px;
+        text-align: center;
+    }
+
+    .video-frame {
+        width: 80%; /* Ширина відео трохи менша за ширину контейнера */
+        aspect-ratio: 4 / 3; /* Пропорції 4:3 */
+        justify-content: center;
+    }
+
+    .growing img {
+        max-width: 50%;
+        max-height: auto;
+        display: none !important;
+    }
+
+    .titleEng {
+        text-align: center; /* Вирівнювання тексту по центру */
+    }
+    
+    .titleEng h2 {
+        margin: 0 auto; /* Центрування заголовка */
+        text-align: center; /* Для додаткової надійності */
+    }
+    
+}
+
+
+
+
+
+/* Для великих планшетів і невеликих моніторів (768px - 1080px) */
+@media (min-width: 811px) and (max-width: 1080px) {
+    .intro {
+        padding-top: 5vw; /* Плавний верхній відступ */
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .introContent,
+    .introCont {
+        width: 90%; /* Зменшена ширина */
+        padding: clamp(15px, 3vw, 30px); /* Плаваючі внутрішні відступи */
+        border-radius: 25px; /* Пом'якшені краї */
+    }
+
+    .content {
+        flex-direction: column; /* Елементи розташовуються вертикально */
+        gap: 3vw; /* Проміжок між текстом і відео */
+    }
+
+    .text-section {
+        flex: 1; /* Пріоритет для текстової частини */
+        order: 1; /* Текст залишається зверху */
+    }
+
+    .intro-text p {
+        font-size: clamp(16px, 2vw, 20px); /* Плаваючий розмір тексту */
+        padding-left: 0; /* Без додаткового лівого відступу */
+        text-align: center; /* Центрування тексту */
+    }
+
+    .video-section {
+        flex: 1; /* Пріоритет для відео */
+        order: 2; /* Відео буде під текстом */
+        padding-top: 2vw; /* Відступ зверху */
+        gap: 1.5vw; /* Проміжок між відео */
+        display: flex;
+        justify-content: center; /* Центрування відео */
+    }
+
+    .video-frame {
+        width: 80%; /* Відео займає 80% ширини контейнера */
+        max-width: 600px; /* Максимальна ширина */
+        aspect-ratio: 4 / 3; /* Пропорції відео */
+        border: 2px solid #ddd;
+        border-radius: 10px;
+        box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Тінь для гарного вигляду */
+        transition: transform 0.3s ease, box-shadow 0.3s ease;
+    }
+
+    .video-frame:hover {
+        transform: scale(1.05); /* Ефект збільшення при наведенні */
+        box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2);
+    }
+
+    .growing img {
+        width: clamp(50%, 70%, 90%); /* Плаваючий розмір зображення */
+        height: auto; /* Збереження пропорцій */
+        margin: 0 auto; /* Центрування */
+        padding: clamp(10px, 2vw, 20px); /* Плаваючі відступи */
+        border-radius: 15px;
+        box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2); /* Тінь для краси */
+        display: none !important;
+    }
+
+    .titleEng h2 {
+        font-size: clamp(20px, 3vw, 30px); /* Плаваючий розмір заголовка */
+        text-align: center; /* Центрування заголовка */
+        margin-bottom: clamp(10px, 2vw, 20px); /* Відступ знизу */
+    }
+}
+
+
+

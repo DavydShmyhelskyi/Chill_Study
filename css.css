@@ -1,0 +1,46 @@
+/* Loader styles */
+.loader {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: #0f4eb3;
+    z-index: 9999;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 50px;
+    opacity: 1; /* Початкова непрозорість */
+    transition: opacity 1s ease; /* Плавний перехід */
+}
+
+.loader.hidden {
+    opacity: 0; /* Непрозорість при зникненні */
+    pointer-events: none; /* Вимкнути взаємодію */
+}
+
+
+        .loader img {
+            width: 100px;
+            height: 100px;
+            animation: spin 2s linear infinite;
+            border-radius: 50%;
+        }
+        
+
+        @keyframes spin {
+            0% {
+                transform: rotate(0deg);
+            }
+            100% {
+                transform: rotate(360deg);
+            }
+        }
+
+        body.loading {
+            overflow: hidden;
+        }
+.braaah span {
+    color: white;
+}

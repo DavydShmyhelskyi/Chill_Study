@@ -1,0 +1,39 @@
+/* CSS для заголовка titleEng */
+.titleMusic {
+    padding: 5px;
+    padding-left: 20px;
+    text-align: center;
+    margin-bottom: 20px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.titleMusic h2 {
+    font-size: 28px;
+    font-weight: bold;
+    color: #ffffff;
+    margin: 0;
+    padding: 10px 0;
+    border-bottom: 3px solid transparent;
+    display: inline-block;
+    transition: border-color 0.3s ease;
+}
+
+.titleMusic h2:hover {
+    border-color: #00bfff; /* Яскраво-блакитний колір при наведенні */
+}
+
+.titleMusic h2 span {
+    color: #00bfff; /* Акцент на "fun" */
+}
+.titleMusic h3{
+    font-size: 20px;
+    font-weight: bold;
+    color: #ffffff;
+    margin: 0;
+    padding: 10px 0;
+    border-bottom: 3px solid transparent;
+    display: inline-block;
+    transition: border-color 0.3s ease;
+
+}
